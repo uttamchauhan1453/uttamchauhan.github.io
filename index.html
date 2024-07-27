@@ -1,8 +1,293 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/c409095ec5.js" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px 0px;
+        }
+        body{
+            color: white;
+            /* background-color:#8eb27b; */
+            /* background-color: #aed39b; */
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            display: flex;
+           justify-content: space-around;
+           align-items: center;
+           height: 60px;
+           /* background-color:#73a05c; */
 
+           background-color:#b56357;
+           /* background-color: black; */
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 20px;
+        }
+       .left{
+        font-size: 1.4rem;
+       }
+    </style>
+</head>
 <body>
-HELLO, UTTAM CHAUHAN !!!
-</body>
+    <div class="container">
+    <header>
+        <nav>
+        <div class="left">Uttam's Portfolio</div>
+        <div class="right">
+             <ul id="sidemenu">
+            <li><a href="#home" onclick="closemenu()">Home</a></li>
+            <li><a href="#skills" onclick="closemenu()">Skills</a></li>
+            <li><a href="#projectss" onclick="closemenu()">Projects</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#contactt" onclick="closemenu()">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    </nav>
+</header>
+<main>
+<section id="home" class="first-section">
+    <div class="left-section">
+     Hi, I am <span class="purple">Uttam Chauhan!</span>
+     <br>
+     <span id="element"></span>
+     <div class="home-about">
+        I am a passionate, strategic, well-connected expert of Digital Product solutions with expertise in delivering successful projects in the field of digital strategy, architectural design transformation/modernization and re-engineering of teams and products.
+        Let's connect and explore how I can add value to your team!
+     </div>
+     <div class="aboutt">
+        <a href="Uttam_Chauhan.pdf" class="btn-box">Resume</a>
+     </div>
+    </div>
+    <div class="right-section">
+        <div class="circle">
+    <img src="./images/portfoliophoto1.jpeg" alt="photo">
+    </div>
+</div>
+</section>
+<hr>
+<div id ="skills" class="learn">
+    <p>I have learnt so far</p>
+    <h1>Skills</h1>
+</div>
+<section class="second-section">
+    <div class="left-skills">
+        <ul style="list-style: none;">
+            <h1 style="text-decoration: underline;">Technical Skills</h1>
+            <br>
+            <li><img class="image-top" src="./images/Java-Logo.png"><span> Java</span></li>
+            <li><img class="image-top" src="./images/kotlin-logo.png"><span> Kotlin</span></li>
+            <li><img class="image-top" src="./images/spring-boot.png"><span> Spring Boot</span></li>
+            <li><img class="image-top" src="./images/microservices.jpg"><span> Microservices</span></li>
+            <li><img class="image-top" src="./images/nodejs-logo-36.png"><span> Distributed Systems</span></li>
+            <li><img class="image-top" src="./images/oracle.jpg"><span> Oracle</span></li>
+            <li><img class="image-top" src="./images/kafka.webp"><span> Kafaka Streams</span></li>
+            <li><img class="image-top" src="./images/threads.png"><span> Multithreading </span></li>
+            <li><img class="image-top" src="./images/distributed.jpg"><span> CI/CD</span></li>
+            <li><img class="image-top" src="./images/kubernetes.png"><span> Docker/Kubernetes/OpenShift</span></li>
+        </ul>
+    </div>
 
+    <div class="right-skills">
+      <ul style="list-style-type:none;">
+        <h1 style="text-decoration:underline;">Professional Skills</h1>
+        <br>
+        <li>&#x2705 Problem Solving</li>
+        <li>&#x2705 Communication</li>
+        <li>&#x2705 Creativity</li>
+        <li>&#x2705 Teamwork and Collaboration</li>
+        <li>&#x2705 Continuous Learning</li>
+      </ul>
+    </div>
+</section>
+
+<hr>
+<div id="projectss" class="learn">
+    <p>I have made so far</p>
+    <h1>Recent Projects</h1>
+</div>
+
+<section class="third-section">
+    <div class="projects-content">
+
+        <div class="row">
+            <img src="./images/adib.png">
+        <div class="layer">
+            <h5>ADIB Mobile Banking</h5>
+            <p>ADIB is a leading bank in the UAE, Headquartered and listed in Abu Dhabi.</p>
+            <p>  I architected and implemented a scalable microservices infrastructure for the new Banking Mobile App.
+              Worked in developing distributed platform systems such as Messaging Platforms, Pub/Sub Systems, Databases, Distributed Computing Frameworks, and Schedulers.
+              Technologies Used: Java, Spring Boot, Microservices, Kafka Streams, OpenShift, Concurrecny & Multithreading.
+               </p>
+                 <a href="#"><i class='bx bx-link-external' style="color: #3d2513;"></i>'></a>
+        </div>
+        </div>
+
+        <div class="row">
+            <img src="./images/alinma.png">
+        <div class="layer">
+            <h5>Alinma Digital Banking</h5>
+            <p>Alinma Bank is Saudi Arabia's epicenter for dynamic, innovative, Shariah-compliant banking and financial services!</p>
+            <p>  I Designed and developed a high-availability backend system based on Microservices Architecture.
+              Transformed legacy application into a suite of Microservices using Java, Spring Boot, Kafka streams</p>
+                 <a href="#"><i class='bx bx-link-external' style="color: #3d2513;"></i>'></a>
+        </div>
+        </div>
+
+        <div class="row">
+            <img src="./images/letshego.jpg">
+        <div class="layer">
+            <h5>LetSheGo Digital Finance</h5>
+            <p>The Letshego Group is a Pan African provider of financial products to access simple, appropriate and inclusive financial solutions for individuals, micro and small entrepreneurs (MSEs).</p>
+            <p>I Worked as a backend developer to develop and test fast, robust and scalable backend applications and RESTful API using Java, AWS, Spring Boot and MySQL.
+              Analyzed the existing codebase and followed the modern Object-Oriented methodology and MVC architectural pattern to implement the required features and architect the production codebase.
+             </p>
+                 <a href="#"><i class='bx bx-link-external' style="color: #3d2513;"></i>'></a>
+        </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+
+<section class="fourth-section">
+    <div id="about" class="about">
+        <h1>More About Me</h1>
+    </div>
+    <div class="fourth-text">
+        <h2>My Experience</h2>
+        <p>Currently, I'm working at Nagarro as Associate Principal Engineer from past 6 yrs. I'm passionate about
+            problem-solving and software development.
+        </p>
+        </br>
+        <br>
+        <h2>About Me</h2>
+        <p>I graduated with a Bachelor's degree in Technology (B.Tech) in 2010 with Honors from Kurukstetra University.
+        </p>
+        <br>
+
+        <br>
+        <div class="about-icons">
+            <a href="https://github.com/uttamchauhan2578" class="btn-box">Github</a>
+            <a href="https://www.linkedin.com/in/uttam-chauhan-8543411a/" class="btn-box">LinkedIn</a>
+
+        </div>
+
+    </div>
+</section>
+
+<hr>
+<div id="contactt" class="contact">
+    <h1>Contact Me</h1>
+</div >
+<div class="contact-email">
+   <p><img class="send-img" src="./images/send-regular-24.png"><span>uchauhan@icloud.com</span></p>
+</div>
+
+<section class="fifth-section">
+    <form method="POST">
+        <h3>Get in touch</h3>
+        <input type="text" id="name" placeholder="Your Name" autocomplete="off">
+        <input type="email" id="email" placeholder="Your Email" autocomplete="off">
+        <input type="text" id="subject" placeholder="Enter your Subject" autocomplete="off">
+        <textarea type="text" id="msg" rows="4" placeholder="Enter your message"></textarea>
+        <button type="button" id="btn">Submit</button>
+    </form>
+</section>
+<section class="sixth-section">
+    <div class="copyright">
+        <div>
+            <h1>Uttam Chauhan</h1>
+            <p>2024@all right reserved</p>
+        </div>
+        <div>
+            <h2>Follow us</h2>
+            <div class="copyright-icons">
+                <a href='https://github.com/uttamchauhan2578' target={'blank'}>Github</a>
+                <a href='https://www.linkedin.com/in/uttam-chauhan-8543411a/' target={'blank'}>Linkedin</a>
+                <a href='https://x.com/uttamchauhan/' target={'blank'}>Twitter</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+</div>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+      strings: [' a Passionate Engineer',' a Backend Developer', ' a Coder'],
+      typeSpeed: 50,
+      loop:true,
+    });
+  </script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+   var btn = document.getElementById("btn");
+   btn.addEventListener('click',function(e){
+    e.preventDefault();
+   var name = document.getElementById("name").value;
+   var email = document.getElementById("email").value;
+   var subject = document.getElementById("subject").value;
+   var msg = document.getElementById("msg").value;
+   var body = "Name: " + name
+    + "<br> Email: " +  email
+    + "<br> Subject: " + subject
+    + "<br> msg: " + msg
+
+   Email.send({
+    SecureToken : "4b67fbdb-4ad1-4531-b31d-b8eb2adb6bac",
+    To : "uchauhan@icloud.com",
+    From : "uchauhan@icloud.com",
+    Subject : "New Contact Form Enquiry",
+    Body : body
+}).then(
+    function message(){
+   alert("Message send sucessfully")
+    },
+    function (error) {
+          console.error("Error sending message:", error);
+          alert("Error sending message. Please try again later.");
+        }
+     );
+    });
+   });
+  </script>
+  <script>
+    var sidemenuu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenuu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenuu.style.right= "-200px";
+    }
+  </script>
+</body>
 </html>
